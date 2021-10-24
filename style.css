@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+
+  background: url("../images/background.webp");
+  background-color: #121214;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  --black: hsl(240, 6%, 13%);
+  --grey: #f1f1f1;
+
+  display: grid;
+  place-items: center;
+}
+
+.atropos-rotate {
+  width: 358px;
+  height: 540px;
+  margin-top: -20px;
+  border-radius: 1rem;
+}
+
+main {
+  background-image: url("../images/badge.png");
+  width: 33.375rem;
+  height: 33.75rem;
+  border-radius: 3px;
+
+  transform-style: preserve-3d;
+  transform: translateZ(0);
+
+  background-color: rgba(126, 126, 126, 0.212);
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.411);
+
+  /* margin-top: -350px; */
+
+}
+
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: var(--grey);
+}
+
+body span {
+  margin-top: -7px;
+  z-index: 100;
+}
+
+body span:nth-child(2) {
+  margin-top: -350px;
+  z-index: 100;
+}
+
+.container .avatar {
+  padding-top: 75px;
+}
+
+.avatar {
+  width: 10rem;
+  margin: 0 auto 0;
+
+  position: relative;
+}
+
+.avatar span {
+  position: absolute;
+  top: 150px;
+  z-index: 1;
+}
+
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+  margin-top: 20px;
+  border-radius: 50%;
+  /* clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%); */
+}
+
+.animate__animated animate__bounce {
+  animation: animate__bounceIn;
+}
+
+h1 {
+  font-size: 1.5rem;
+
+  margin-top: 1.5rem;
+}
+
+a {
+  color: var(--grey);
+  text-decoration: none;
+
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-top: 3rem;
+}
+
+ul {
+  margin-top: 2rem;
+
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  gap: 0.5rem;
+
+  justify-content: center;
+}
+
+.instagram {
+  text-align: center;
+  background-color: #323238;
+  border-radius: 5px;
+}
+
+.instagram:hover {
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+}
+
+.linkedin {
+  text-align: center;
+  background-color: #323238;
+  border-radius: 5px;
+}
+
+.github {
+  text-align: center;
+  background-color: #323238;
+  border-radius: 5px;
+  width: 48px;
+  height: 52px;
+}
+
+.github:hover {
+  background-color: #888687;
+}
+
+.linkedin:hover {
+  background-color: #035480;
+}
+
+/* whatsapp contact */
+
+.whats {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    position: absolute;
+    z-index: 5;
+  }
+  body {
+    display: flex;
+  }
+  main {
+    align-items: center;
+  }
+}
