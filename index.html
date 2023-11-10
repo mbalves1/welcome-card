@@ -1,64 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="shortcut icon" href="./static/folder.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="shortcut icon" href="./static/folder.ico" />
 
-    <title>Murilo - front end</title>
-</head>
-<body style="display:flex;">
+    <title>Murilo - full stack</title>
+  </head>
+  <body style="display: flex">
+    <main
+      data-tilt=""
+      data-tilt-glare="true"
+      data-tilt-max-glare="0.1"
+      data-tilt-speed="400"
+      data-tilt-scale="1.02"
+      data-tilt-max="10"
+      data-tilt-perspective="500"
+      style="
+        transform: perspective(500px) rotateX(0deg) rotateY(0deg)
+          scale3d(1, 1, 1);
+        will-change: transform;
+        margin: auto;
+      "
+    >
+      <div class="avatar">
+        <span>
+          <img
+            src=""
+            alt=""
+            class="animate__animated animate__bounceIn animate__infinite animate__slower"
+          />
+        </span>
 
-    <main  data-tilt="" data-tilt-glare="true" data-tilt-max-glare="0.1" data-tilt-speed="400" data-tilt-scale="1.02" data-tilt-max="10" data-tilt-perspective="500" style="transform: perspective(500px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1); will-change: transform; margin:auto;">
-        <div class="avatar">
-            <span>
-            <img src="" alt="" class="animate__animated animate__bounceIn animate__infinite animate__slower">
-            </span>
-    
-            <img id="" src="./static/profile.jpg" alt="">
+        <img id="" src="./static/profile.jpg" alt="" />
 
-            <h1 style="color:#FFF; font-weight: bolder;">Murilo Alves</h1>
-            <!-- <a id="userLink" href="whats" target="_blank">
-                <img src="./static/whatsapp.png" style="height: 18px;" alt="">
-                <div id="userLogin">murilo mensagem</div>
-            </a> -->
+        <h1 style="color: #fff; font-weight: bolder">Murilo Barros</h1>
+				<div style="display: flex; flex-direction: column;">
+					<a
+						id="userLink"
+						href="https://wa.me/5514997622613"
+						target="_blank"
+						style="margin: 10px 0px"
+					>
+						<img src="./static/icons8-whatsapp.svg" style="height: 18px;" alt="">
+						<div id="userLogin"><i style="font-size:12px">(14) 9 9762 2613</i></div>
+					</a>
+					<a>
+						<img src="./static/icons8-email-64.png" style="height: 22px; color: green" alt="">
+						<div id="userLogin" style="font-size:12px">murilobalves1@gmail.com</div>
+					</a>
+				</div>
 
-            <p style="color:#FFF; font-weight: bolder;">Full Stack Developer</p>
-            
-            <ul id="socialLinks">
-                <li class="linkedin">
-                    <a href="https://www.linkedin.com/in/murilo-de-barros-alves/" target="_blank">
-                        <img src="./static/linkedin.svg" alt="" >
-                    </a>
-                </li>
-                <li class="instagram">
-                    <a href="https://www.instagram.com/murilobalves/" target="_blank">
-                        <img src="./static/instagram.svg" alt="">
-                    </a>
-                </li>
-                <li class="github">
-                    <a href="https://github.com/mbalves1" target="_blank">
-                        <img src="./static/github.svg" style="height:38px; padding:5px; padding-bottom: 5px;" alt="">
-                    </a>
-                </li>
+        <p style="color: #fff; font-weight: bolder">Full Stack Developer</p>
 
-            </ul>
-        </div>
+        <ul id="socialLinks">
+          <li class="linkedin">
+            <a
+              href="https://www.linkedin.com/in/murilo-de-barros-alves/"
+              target="_blank"
+            >
+              <img src="./static/linkedin.svg" alt="" />
+            </a>
+          </li>
+          <li class="instagram">
+            <a href="https://www.instagram.com/murilodbarros/" target="_blank">
+              <img src="./static/instagram.svg" alt="" />
+            </a>
+          </li>
+          <li class="github">
+            <a href="https://github.com/mbalves1" target="_blank">
+              <img
+                src="./static/github.svg"
+                style="height: 38px; padding: 5px; padding-bottom: 5px"
+                alt=""
+              />
+            </a>
+          </li>
+					<li class="github">
+						<div title="Gerenciado de finanças: Node + Vue 3">
+							<a href="https://fincard.vercel.app/" target="_blank">
+								<img
+									src="./static/icons8-wallet-64.png"
+									style="height: 38px; padding: 5px; padding-bottom: 5px"
+									alt=""
+								/>
+							</a>
+						</div>
+          </li>
+        </ul>
+      </div>
     </main>
-    <div style="display: flex; align-self: flex-end; margin:5%" class="footer">
-        <a id="userLink" class="whats" href=" https://api.whatsapp.com/send?phone=+5514997622613" target="_blank">
-            <img src="./static/icons8-whatsapp.svg" style="height: 38px;" alt="">
-        </a>
+    <div style="display: flex; align-self: flex-end; margin: 5%" class="footer">
+      <a
+        id="userLink"
+        class="whats"
+        href="https://wa.me/5514997622613"
+        target="_blank"
+      >
+        <img src="./static/icons8-whatsapp.svg" style="height: 38px" alt="" />
+      </a>
     </div>
-    
 
     <script src="vanilla-tilt.js"></script>
-</body>
+  </body>
 </html>

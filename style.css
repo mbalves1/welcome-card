@@ -69,10 +69,13 @@ body span:nth-child(2) {
 }
 
 .avatar {
-  width: 10rem;
+  width: 100%;
   margin: 0 auto 0;
-
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   position: relative;
+  align-items: center;
 }
 
 .avatar span {
